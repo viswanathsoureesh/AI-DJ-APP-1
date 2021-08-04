@@ -1,0 +1,12 @@
+#speed{
+    font-size: 23px;
+    margin: 15px;
+}
+
+canvas{
+    border: 5px dashed whitesmoke;
+}
+
+.heading{
+font-size: 20px;
+}
