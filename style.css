@@ -4,9 +4,17 @@
 }
 
 canvas{
-    border: 5px dashed whitesmoke;
+    border: 10px dashed whitesmoke;
+    border-radius: 50px;
+    margin-top: 50px;
 }
 
 .heading{
 font-size: 20px;
+}
+.play{
+    width: 10%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
 }
