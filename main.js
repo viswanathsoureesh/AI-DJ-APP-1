@@ -15,12 +15,23 @@ function draw(){
     fill("FF0000");
     stroke("FF0000");
 
+    circle(right_wristX,right_wristY,25);
+
+    if(right_wristY==2){
+      document.getElementById("speed").innerHTML="Song Name=Harry Potter";
+      song.rate(0.5)
+    } 
+      else if(right_wristY>100 && right_wristY<=200){
+        document.getElementById("speed").innerHTML="Speed=1x";
+        song.rate(1)
+      }
+
      if(leftWristscore>0.2){
        circle(left_wristX,left_wristY,20)
        X=Number(left_wristY);
        R=floor(X);
        V=R/500;
-       document.getElementById("speed").innerHTML="Song Name="+Harry Potter;
+       document.getElementById("vol").innerHTML="Volume="+V;
        song.setVolume(V);
      }
 }
@@ -33,6 +44,9 @@ function musicplay(){
 
 function musicstop(){
     song.stop();
+}
+function musicpause(){
+    song.pause();
 }
 function setup(){
     canvas=createCanvas(500,600)
